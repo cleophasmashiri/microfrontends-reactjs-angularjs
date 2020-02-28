@@ -9,13 +9,16 @@ We going to showcase Single-Spa in three steps:
 
 ## 1. Set npm dep, webpack, babel.
 
+
 	a) Install single-spa
 
+    // package.json
         ``` 
         npm install single-spa 
         ```
 
 	b) 
+    // package.json
     ```
     npm install babel-core, babel-plugin-syntax-dynamic-import, babel-plugin-transform-object-rest-spread, babel-preset-env, babel-preset-latest, babel-preset-react —dev
     ```	
