@@ -20,6 +20,7 @@ npm install single-spa
 
 	b) 
 
+
 // package.json
 ```
 npm install babel-core, babel-plugin-syntax-dynamic-import, babel-plugin-transform-object-rest-spread, babel-preset-env, babel-preset-latest, babel-preset-react —dev
