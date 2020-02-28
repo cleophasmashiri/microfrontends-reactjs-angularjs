@@ -1,9 +1,9 @@
 # Microfrontends Reactjs Angularjs
 
 We going to showcase Single-Spa in three steps:
-## 1. Setup npm dep, webpack, babel.
-## 2. Create apps home, navbar, angularjs.
-## 3. Register apps with registerSingleSpa.
+1. Setup npm dep, webpack, babel.
+2. Create apps home, navbar, angularjs.
+3. Register apps with registerSingleSpa.
 
 ---
 
