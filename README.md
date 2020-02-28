@@ -43,8 +43,7 @@ npm install babel-core, babel-plugin-syntax-dynamic-import, babel-plugin-transfo
 c) Webpack
 
 ```
-npm webpack webpack-dev-server webpack-cli --dev
-npm install clean-webpack-plugin —dev
+npm install webpack webpack-dev-server webpack-cli clean-webpack-plugin --dev
 ```
 
 
