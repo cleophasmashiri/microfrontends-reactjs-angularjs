@@ -15,7 +15,7 @@ a) Install single-spa
 npm install single-spa 
 ```
 
-b) 
+b) Install babel dependencies.
 
 ```
 npm install babel-core, babel-plugin-syntax-dynamic-import, babel-plugin-transform-object-rest-spread, babel-preset-env, babel-preset-latest, babel-preset-react —dev
