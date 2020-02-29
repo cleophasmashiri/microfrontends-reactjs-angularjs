@@ -9,6 +9,12 @@ We going to showcase Single-Spa in three steps:
 
 ## 1. Set npm dep, webpack, babel.
 
+a) 
+```
+npm init
+mkdir src
+```
+
 a) Install single-spa
 
 ``` 
