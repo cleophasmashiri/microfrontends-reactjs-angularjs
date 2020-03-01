@@ -15,18 +15,59 @@ npm init
 mkdir src
 ```
 
-a) Install single-spa
+a) Setup dependencies in package.json as follows.
 
 ``` 
-npm install single-spa 
+{
+  "name": "microfrontends-reactjs-angularjs",
+  "version": "1.0.0",
+  "description": "We going to showcase Single-Spa in three steps: 1. Setup npm dep, webpack, babel. 2. Create apps home, navbar, angularjs. 3. Register apps with registerSingleSpa.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleophasmashiri/microfrontends-reactjs-angularjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleophasmashiri/microfrontends-reactjs-angularjs/issues"
+  },
+  "homepage": "https://github.com/cleophasmashiri/microfrontends-reactjs-angularjs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "angular": "^1.7.1",
+    "angular-ui-router": "^1.0.18",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.3.1",
+    "single-spa": "^3.9.1",
+    "single-spa-angularjs": "^3.0.1",
+    "single-spa-react": "^2.5.4"
+  }
+}
+
 ```
 
-b) Install babel dependencies.
-
-```
-
-Cleos-MacBook-Pro:microfrontends-reactjs-angularjs cleophas$ npm install babel-core babel-plugin-syntax-dynamic-import babel-plugin-transform-object-rest-spread babel-preset-env babel-preset-latest babel-preset-react --save-dev
-```	
 
 // Update file .babelrc
 
@@ -51,17 +92,7 @@ touch .babelrc
 }
 ```
 
-c) Webpack
-
-```
-npm install webpack webpack-dev-server webpack-cli clean-webpack-plugin@0.1.19 --save-dev
-```
-
-
-Install Webpack Loaders
-```
-npm install style-loader css-loader html-loader babel-loader --save-dev
-```
+c) Configure Webpack
 
 ```
 touch webpack.config.js
@@ -122,9 +153,6 @@ module.exports = {
     }
 };
 ```
-
-
-
 
 ## 2. Create apps home, navbar, angularjs.
 
