@@ -37,16 +37,16 @@ touch .babelrc
 ```
 {
     "presets": [
-      ["env", {
+        ["@babel/preset-env", {
         "targets": {
-          "browsers": ["last 2 versions"]
+            "browsers": ["last 2 versions"]
         }
-      }],
-      ["react"]
+        }],
+        ["@babel/preset-react"]
     ],
     "plugins": [
-      "syntax-dynamic-import",
-      "transform-object-rest-spread"
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-object-rest-spread"
     ]
 }
 ```
@@ -55,6 +55,12 @@ c) Webpack
 
 ```
 npm install webpack webpack-dev-server webpack-cli clean-webpack-plugin@0.1.19 --save-dev
+```
+
+
+Install Webpack Loaders
+```
+npm install style-loader css-loader html-loader babel-loader --save-dev
 ```
 
 ```
@@ -121,4 +127,35 @@ module.exports = {
 
 
 ## 2. Create apps home, navbar, angularjs.
+
+Create index.html
+```
+<!-- index.html -->
+<html>
+  <head>
+    <!-- Materialize CSS --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!-- single-spa apps -->
+    <div id="navBar"></div>
+    <div id="home"></div>
+    <div id="angularJS"></div>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- connect to the single-spa config file -->
+    <script src="/dist/single-spa.config.js"></script>
+  </body>
+</html>
+```
+
+Create single-spa.config.js.
+
+```
+touch single-spa.config.js
+```
+
 ## 3. Register apps with registerSingleSpa. 
