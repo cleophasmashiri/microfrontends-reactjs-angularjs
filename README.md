@@ -186,4 +186,25 @@ Create single-spa.config.js.
 touch single-spa.config.js
 ```
 
+## Setup home and Install dependencies
+```
+npm install react react-dom single-spa-react react-router-dom --save
+```
+
+```
+touch src/home/home.app.js src/home/root.component.js
+```
+
+
+
 ## 3. Register apps with registerSingleSpa. 
+
+
+## Create angularJS app.
+
+Install angular dependencies
+
+```
+npm install angular angular-ui-router single-spa-angularjs ---save
+```
+

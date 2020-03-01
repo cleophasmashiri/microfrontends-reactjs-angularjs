@@ -34,14 +34,15 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "angular": "^1.7.1",
-    "angular-ui-router": "^1.0.18",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "add": "^2.0.6",
+    "angular": "^1.7.9",
+    "angular-ui-router": "^1.0.25",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-router-dom": "^4.3.1",
     "react-transition-group": "^2.3.1",
     "single-spa": "^3.9.1",
-    "single-spa-angularjs": "^3.0.1",
-    "single-spa-react": "^2.5.4"
+    "single-spa-angularjs": "^3.1.0",
+    "single-spa-react": "^2.11.0"
   }
 }
